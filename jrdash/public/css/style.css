@@ -1,0 +1,105 @@
+/*
+    Override bootstrap css
+*/
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Condensed);
+
+h1,h2,h3,h4,h5{
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+.container{
+    width:  940px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+#header{
+    background: #f5f5f5;
+    margin-bottom: 50px;
+}
+#footer{
+    margin-top: 50px;
+    text-align: right;
+    
+}
+#footer .container{
+    border-top: 1px solid;
+    padding-top: 20px;
+    color: #b3b3b3;
+}
+.navbar .container{
+    width: 940px;
+    margin: 0 auto;
+}
+#dasboard-main{
+    background: #f2f2f2;
+    min-height: 500px;
+}
+#dashboard-side{
+     background: #f2f2f2;
+     min-height: 500px;
+}
+.todo_complete{
+    color:#b3b3b3;
+}
+#list_todo,
+#list_note{
+    margin: 0 15px 0 15px;
+}
+#list_todo div,
+#list_note div{
+    padding:3px 2px;
+    border-radius: 6px;
+    overflow: auto;
+    clear: both;
+}
+#list_todo div:hover,
+#list_note div:hover{
+    background: rgba(255,255,255,0.8);
+}
+#list_todo div span:first-child{
+     width: 230px;
+     float: left;
+     display:block;
+     overflow: auto;
+}
+
+#list_todo span.options,
+#list_note span.options{
+    float: right;
+}
+
+#list_todo span.options a,
+#list_note span.options a{
+    margin-left: 4px;
+}
+#list_todo span.options a:hover,
+#list_note span.options a:hover{
+   background: rgba(0,0,255,0.2)
+}
+#error, #success{
+    position: fixed;
+    bottom: 10px;
+    width: 889px;
+    z-index: 100;
+}
+/*
+    Generic styles
+*/
+.ajax-loader, .ajax-loader-gray{
+    background: url('../img/ajax-loader-white.gif');
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+}
+.ajax-loader-gray{
+    background: url('../img/ajax-loader-gray.gif');
+    
+}
+.hide{
+    display: none;
+}
+
+/* Form creates */
+#create_todo, #create_note{
+    padding: 5px 0 5px 5px;
+}
+
